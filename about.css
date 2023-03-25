@@ -1,0 +1,54 @@
+.about h2 {
+  font-size: 1rem;
+  font-weight: 600;
+  color: orangered;
+  margin: 0;
+  margin-bottom: 1em;
+}
+
+.about {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 20% 0;
+}
+
+.about-me {
+  display: flex;
+  flex-direction: column;
+  width: 35%;
+}
+
+.about-me p {
+  line-height: 2;
+  max-width: 75ch;
+  margin: 0;
+  margin-bottom: 1em;
+}
+
+.tech {
+  display: flex;
+  flex-direction: column;
+}
+
+.tech h3 {
+  font-size: 1rem;
+  font-weight: 600;
+  margin: 0;
+  margin-bottom: 1em;
+}
+
+.tech-tags {
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 0.85rem;
+}
+
+.tech-tags span {
+  background-color: rgb(231, 231, 231);
+  color: rgb(117, 123, 135);
+  padding: 1em 1em;
+  border-radius: 5px;
+  margin-right: 1em;
+  margin-bottom: 1em;
+}
