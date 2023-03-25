@@ -17,13 +17,11 @@ function createAboutSectionObserver() {
     threshold: 0.1,
   });
 
-  let aboutH2 = document.querySelector("#about h2");
-  let aboutP1 = document.querySelector("#about-p1");
-  let aboutP2 = document.querySelector("#about-p2");
-  let aboutTech = document.querySelector(".tech");
+  let aboutP1 = document.querySelector("#about-part1");
+  let aboutP2 = document.querySelector("#about-part2");
+  let aboutP3 = document.querySelector("#about-part3");
 
-  observer.observe(aboutH2);
   observer.observe(aboutP1);
   observer.observe(aboutP2);
-  observer.observe(aboutTech);
+  observer.observe(aboutP3);
 }
