@@ -52,3 +52,37 @@
   margin-right: 1em;
   margin-bottom: 1em;
 }
+
+@keyframes slide-left {
+  0%,
+  25% {
+    transform: translateX(80px);
+    opacity: 0;
+  }
+
+  30% {
+    opacity: 0.3;
+  }
+
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+.slide-left {
+  animation-timing-function: ease-out, linear;
+  animation-name: slide-left;
+}
+
+.slide-left-fast {
+  animation-duration: 0.9s, 0.4s;
+}
+
+.slide-left-slow {
+  animation-duration: 1.2s, 0.4s;
+}
+
+.slide-left-slower {
+  animation-duration: 1.5s, 0.4s;
+}

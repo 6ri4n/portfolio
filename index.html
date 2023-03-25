@@ -43,11 +43,11 @@
 
     <section class="home">
       <div>
-        <div class="slide-up fast">
+        <div class="slide-up slide-up-fast">
           <h1>Hi, I'm <span class="name">Brian Huang</span>. 👋</h1>
         </div>
 
-        <div class="slide-up slow">
+        <div class="slide-up slide-up-slow">
           <p>
             I am a self-taught
             <span class="fs-wb">Full-Stack Web Developer</span>
@@ -55,7 +55,7 @@
           </p>
         </div>
 
-        <footer class="socials slide-up slower">
+        <footer class="socials slide-up slide-up-slower">
           <a
             href="https://www.linkedin.com/in/bri4n/"
             target="_blank"
@@ -138,9 +138,9 @@
       <div class="about-me">
         <div>
           <a id="about">
-            <h2>ABOUT ME</h2>
+            <h2 class="slide-left-fast">ABOUT ME</h2>
           </a>
-          <p>
+          <p id="about-p1" class="slide-left-fast">
             Presently, I am a student majoring in Computer Network Engineering
             at Renton Technical College, striving to advance my technical
             knowledge and expertise in the ever-evolving domain of Information
@@ -150,7 +150,7 @@
             and knowledge in full-stack web development while continuing my
             studies to earn my Bachelor's degree at Renton Technical College.
           </p>
-          <p>
+          <p id="about-p2" class="slide-left-slow">
             As an aspiring web developer, I am committed to building my skills
             and expanding my expertise in a range of areas, spanning from HTML
             and CSS to the complexities of JavaScript and more. Currently, I've
@@ -161,7 +161,7 @@
             innovative and effective websites and applications.
           </p>
 
-          <div class="tech">
+          <div class="tech slide-left-slower">
             <h3>TECHNOLOGIES</h3>
             <div class="tech-tags">
               <span>HTML</span>
@@ -180,5 +180,7 @@
         </div>
       </div>
     </section>
+
+    <script src="app.js"></script>
   </body>
 </html>
