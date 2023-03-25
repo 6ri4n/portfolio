@@ -14,7 +14,7 @@ function createAboutSectionObserver() {
   let observer = new IntersectionObserver(animateSlideLeft, {
     root: null,
     rootMargin: "0px",
-    threshold: 0.1,
+    threshold: 0.05,
   });
 
   let aboutP1 = document.querySelector("#about-part1");

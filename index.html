@@ -12,6 +12,7 @@
       rel="stylesheet"
     />
 
+    <link rel="stylesheet" href="base.css" />
     <link rel="stylesheet" href="nav.css" />
     <link rel="stylesheet" href="home.css" />
     <link rel="stylesheet" href="about.css" />
@@ -24,9 +25,9 @@
     <title>Portfolio | Brian Huang</title>
   </head>
   <body>
-    <nav>
+    <nav class="flex">
       <span><a href="index.html">Home</a></span>
-      <div class="tabs">
+      <div class="flex tabs">
         <span><a href="#about">About</a></span>
         <span><a href="#projects">Projects</a></span>
         <span>
@@ -41,7 +42,7 @@
       </div>
     </nav>
 
-    <section class="home">
+    <section class="flex flex-column home">
       <div>
         <div class="slide-up slide-up-fast">
           <h1>Hi, I'm <span class="name">Brian Huang</span>. 👋</h1>
@@ -49,13 +50,12 @@
 
         <div class="slide-up slide-up-slow">
           <p>
-            I am a self-taught
-            <span class="fs-wb">Full-Stack Web Developer</span>
-            based in Seattle, Washington.
+            I am a self-taught Full-Stack Web Developer based in Seattle,
+            Washington.
           </p>
         </div>
 
-        <footer class="socials slide-up slide-up-slower">
+        <footer class="flex socials slide-up slide-up-slower">
           <a
             href="https://www.linkedin.com/in/bri4n/"
             target="_blank"
@@ -134,8 +134,8 @@
       </div>
     </section>
 
-    <section class="about">
-      <div class="about-me">
+    <section class="flex flex-column about">
+      <div class="flex flex-column about-me">
         <div>
           <div id="about-part1" class="slide-left-fast">
             <a id="about">
@@ -164,9 +164,9 @@
             innovative and effective websites and applications.
           </p>
 
-          <div id="about-part3" class="tech slide-left-slower">
+          <div id="about-part3" class="flex flex-column tech slide-left-slower">
             <h3>TECHNOLOGIES</h3>
-            <div class="tech-tags">
+            <div class="flex tech-tags">
               <span>HTML</span>
               <span>CSS</span>
               <span>JavaScript</span>

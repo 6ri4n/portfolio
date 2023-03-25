@@ -1,15 +1,4 @@
-body {
-  margin: 0;
-  font-family: "Open Sans", sans-serif;
-}
-
-a {
-  text-decoration: none;
-  color: black;
-}
-
 nav {
-  display: flex;
   margin: 1.5% 3%;
   font-size: 18px;
   font-weight: 600;
@@ -18,7 +7,6 @@ nav {
 }
 
 .tabs {
-  display: flex;
   flex: 1;
   justify-content: flex-end;
 }
@@ -28,6 +16,6 @@ nav {
 }
 
 nav a:hover {
-  transition: color 0.4s linear;
-  color: orangered;
+  transition: color 0.3s linear;
+  color: var(--main-color);
 }
