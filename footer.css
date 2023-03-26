@@ -1,0 +1,11 @@
+.footer {
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 1em;
+}
+
+.footer p {
+  margin: 0;
+  font-weight: 600;
+  color: rgb(117, 123, 135);
+}

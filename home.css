@@ -38,7 +38,7 @@ h1 {
 }
 
 .socials a svg:hover {
-  transform: translateY(-12px);
+  transform: translateY(-10px);
 }
 
 @keyframes slide-up {
