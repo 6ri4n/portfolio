@@ -45,13 +45,13 @@
 
 @keyframes slide-left {
   0%,
-  25% {
+  20% {
     transform: translateX(80px);
     opacity: 0;
   }
 
-  30% {
-    opacity: 0.3;
+  35% {
+    opacity: 0.8;
   }
 
   100% {
