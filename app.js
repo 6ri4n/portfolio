@@ -1,8 +1,22 @@
 window.addEventListener("load", () => {
+  hideNavBar();
   createAboutSectionObserver();
   createProjectsSectionObserver();
   changeProjectTitleColor();
 });
+
+function hideNavBar() {
+  let navBar = document.querySelector("nav");
+  let oldScrollY = window.scrollY;
+  window.onscroll = () => {
+    if (oldScrollY < window.scrollY) {
+      navBar.style.opacity = "0";
+    } else {
+      navBar.style.opacity = "1";
+    }
+    oldScrollY = window.scrollY;
+  };
+}
 
 function createAboutSectionObserver() {
   function animateSlideLeft(entries, observer) {

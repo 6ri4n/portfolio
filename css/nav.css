@@ -4,6 +4,7 @@ nav {
   font-weight: 600;
   position: sticky;
   top: 3%;
+  transition: opacity 0.3s linear;
 }
 
 .tabs {
