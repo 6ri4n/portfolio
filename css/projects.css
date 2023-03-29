@@ -1,7 +1,6 @@
 .projects {
   justify-content: center;
   align-items: center;
-  margin: 5% 0;
 }
 
 .projects h2 {
@@ -13,8 +12,6 @@
 
 .project-grid {
   display: grid;
-  grid-template-rows: repeat(2, 350px);
-  grid-template-columns: repeat(3, 350px);
   grid-gap: 1.5em;
 }
 
@@ -99,14 +96,69 @@
   animation-name: slide-up-2;
 }
 
-.slide-up-2-fast {
-  animation-duration: 1.25s, 0.4s;
+@media (min-width: 320px) {
+  .project-grid {
+    grid-template-rows: 350px;
+    grid-template-columns: 350px;
+    grid-gap: 1.5em;
+  }
+
+  .projects {
+    margin: 10% 0;
+  }
+
+  .slide-up-2-fast {
+    animation-duration: 0.85s, 0.4s;
+  }
+
+  .slide-up-2-slow {
+    animation-duration: 1.15s, 0.4s;
+  }
+
+  .slide-up-2-slower {
+    animation-duration: 1.45s, 0.4s;
+  }
 }
 
-.slide-up-2-slow {
-  animation-duration: 1.55s, 0.4s;
+@media (min-width: 768px) {
+  .project-grid {
+    grid-template-rows: repeat(2, 350px);
+    grid-template-columns: repeat(2, 350px);
+    grid-gap: 1.5em;
+  }
+
+  .slide-up-2-fast {
+    animation-duration: 1.15s, 0.4s;
+  }
+
+  .slide-up-2-slow {
+    animation-duration: 1.15s, 0.4s;
+  }
+
+  .slide-up-2-slower {
+    animation-duration: 1.15s, 0.4s;
+  }
 }
 
-.slide-up-2-slower {
-  animation-duration: 1.85s, 0.4s;
+@media (min-width: 1100px) {
+  .project-grid {
+    grid-template-rows: repeat(2, 350px);
+    grid-template-columns: repeat(3, 350px);
+  }
+
+  .projects {
+    margin: 5% 0;
+  }
+
+  .slide-up-2-fast {
+    animation-duration: 1.25s, 0.4s;
+  }
+
+  .slide-up-2-slow {
+    animation-duration: 1.55s, 0.4s;
+  }
+
+  .slide-up-2-slower {
+    animation-duration: 1.85s, 0.4s;
+  }
 }

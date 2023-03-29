@@ -6,7 +6,6 @@ h1 {
 .home {
   justify-content: center;
   align-items: center;
-  margin: 15% 0;
 }
 
 .home p {
@@ -22,14 +21,11 @@ h1 {
 
 .socials {
   justify-content: space-between;
-  width: 200px;
 }
 
 .socials a svg {
   display: flex;
   justify-content: center;
-  height: 50px;
-  width: 50px;
   transition: transform 0.4s;
 }
 
@@ -73,4 +69,76 @@ h1 {
 
 .slide-up-slower {
   animation-duration: 1.4s, 0.8s;
+}
+
+@media (min-width: 320px) {
+  h1 {
+    font-size: 2.25rem;
+  }
+
+  .home {
+    margin: 40% 0;
+  }
+
+  .home p {
+    font-size: 1.25rem;
+    max-width: 35ch;
+  }
+
+  .socials {
+    max-width: 125px;
+  }
+
+  .socials a svg {
+    height: 35px;
+    width: 35px;
+  }
+}
+
+@media (min-width: 768px) {
+  h1 {
+    font-size: 4rem;
+  }
+
+  .home {
+    margin: 30% 0;
+  }
+
+  .home p {
+    font-size: 1.75rem;
+    max-width: 40ch;
+  }
+
+  .socials {
+    max-width: 150px;
+  }
+
+  .socials a svg {
+    height: 43px;
+    width: 43px;
+  }
+}
+
+@media (min-width: 1100px) {
+  h1 {
+    font-size: 4rem;
+  }
+
+  .home {
+    margin: 15% 0;
+  }
+
+  .home p {
+    font-size: 2rem;
+    max-width: 40ch;
+  }
+
+  .socials {
+    max-width: 175px;
+  }
+
+  .socials a svg {
+    height: 50px;
+    width: 50px;
+  }
 }
